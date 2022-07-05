@@ -61,7 +61,7 @@ export default function Slider() {
           </button>
         </section>
 
-        <div className=" m-auto flex flex-col gap-4 mt-8 w-[50%] min-w-[200px]">
+        <div className=" m-auto flex flex-col gap-4 mt-8 w-[50%] min-w-[200px] text-xl">
           <h4>{sliderArray[sliderCount].name}</h4>
           <p className="text-graylight ">{sliderArray[sliderCount].position}</p>
           <span className="">{sliderArray[sliderCount].about}</span>

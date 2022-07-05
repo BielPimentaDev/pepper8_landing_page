@@ -10,10 +10,10 @@ export default function Header({ aboutRef, projectRef, homeRef, productRef }) {
   const [showMenu, setShowMenu] = useState(false);
   return (
     <>
-      <header className="z-10 flex justify-between items-center p-4 fixed top-0 w-full max-w-[1400px] bg-black">
-        <h1>PEPPER 8</h1>
+      <header className="z-10 flex justify-between items-center p-4 sm:px-16 sm:py-8 fixed top-0 w-full max-w-[1400px] bg-black">
+        <h1 className="font-mont text-2xl font-extrabold">PEPPER 8</h1>
         <nav>
-          <ul className="hidden sm:flex justify-around w-[300px] ">
+          <ul className="hidden sm:flex justify-around w-[300px] text-xl ">
             <li
               onClick={() => handleClick(productRef)}
               className="text-graylight hover:text-white border-b-2 hover:border-purple border-black cursor-pointer"

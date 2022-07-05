@@ -42,7 +42,9 @@ export default function Projects({ projectRef }) {
   return (
     <>
       <div ref={projectRef}>
-        <h2 className="text-center font-mont font-bold text-4xl">PROJETOS</h2>
+        <h2 className="text-center font-mont font-bold text-4xl sm:text-5xl">
+          PROJETOS
+        </h2>
         <p className="text-center text-gray-500 mb-16 mt-2 text-lg">
           Confira abaixo os principais projetos que nós produzimos!
         </p>

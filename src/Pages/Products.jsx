@@ -28,8 +28,11 @@ export default function Products({ productRef }) {
 
   return (
     <>
-      <div ref={productRef} className="text-center">
-        <h2 className="text-center font-mont font-bold sm:text-6xl text-5xl">
+      <div className="text-center">
+        <h2
+          ref={productRef}
+          className="text-center font-mont font-bold sm:text-6xl text-5xl"
+        >
           PRODUTOS
         </h2>
         <p className="text-center text-gray-500 mb-16 mt-2 text-lg">
