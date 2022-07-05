@@ -22,7 +22,7 @@ export default function About({ aboutRef }) {
       <p className="text-center text-gray-500 mb-8 mt-2 text-lg">
         Conheça um pouco mais sobre a nossa marca.
       </p>
-      <ul className="flex justify-center gap-8 mb-16 w-[50%] mx-auto text-xl ">
+      <ul className="flex justify-around h-[40%] gap-8 mb-32 sm:w-[50%] mx-auto text-xl  sm:text-2xl ">
         {Object.keys(componentsList).map((current, i) => {
           return (
             <li
