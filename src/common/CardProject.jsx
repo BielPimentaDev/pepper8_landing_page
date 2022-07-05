@@ -2,7 +2,10 @@ import React from "react";
 
 export default function CardProject({ data }) {
   return (
-    <div className="sm:w-[350px] w-full m-4 rounded-t-lg bg-blacklight ">
+    <div
+      data-aos="fade-up"
+      className="sm:w-[350px] w-full m-4 rounded-t-lg bg-blacklight "
+    >
       <img
         src={data.tumb.img}
         alt={data.tumb.alt}

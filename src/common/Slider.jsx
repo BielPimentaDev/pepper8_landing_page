@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import eu from "../assets/eu.jpg";
 import figmaLogo from "../assets/FigmaLogo.svg";
 import reactIcon from "../assets/ReactIcon.svg.png";
 import tailwindLogo from "../assets/TailwindLogo.svg.png";
@@ -8,6 +8,7 @@ import jsLogo from "../assets/jsLogo.png";
 import databaseLogo from "../assets/databaseLogo.jpg";
 import nodeLogo from "../assets/nodeLogo.png";
 import { CaretLeft, CaretRight } from "phosphor-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Slider() {
   const sliderArray = [
@@ -52,7 +53,9 @@ export default function Slider() {
           <button onClick={prev}>
             <CaretLeft size={32} weight="bold" />
           </button>
-          <div className="bg-purple w-32 h-32 p-4 rounded-full  ">IMAGEM</div>
+          <div>
+            <img src={eu} className=" w-32 h-32 p-0 rounded-full  " />
+          </div>
           <button onClick={next}>
             <CaretRight size={32} weight="bold" />
           </button>
@@ -64,10 +67,9 @@ export default function Slider() {
           <span className="">{sliderArray[sliderCount].about}</span>
         </div>
       </div>
-      <div className="flex justify-center mt-8">
-        {sliderArray[sliderCount].stacks.map((stack) => (
-          <img className="w-[30px]" src={stack} />
-        ))}
+      <div className="flex justify-center gap-8 mt-8">
+        <FaLinkedin size={40} color="#8C7DEC" opacity={0.8} />
+        <FaGithub size={40} color="#8C7DEC" opacity={0.8} />
       </div>
     </>
   );

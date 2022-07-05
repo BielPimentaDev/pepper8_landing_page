@@ -8,27 +8,37 @@ import Home from './Pages/Home';
 import Projects from './Pages/Projects';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import { useEffect } from 'react';
+import { useEffect, useRef, useContext } from 'react';
 import Contact from './common/Contact';
+
 
 
 function App() {
   useEffect(()=>{
-    Aos.init({duration:1300})
+    Aos.init({duration:800})
   },[])
+
+ const projectRef = useRef(null)
+ const homeRef = useRef(null)
+ const productRef = useRef(null)
+ const aboutRef = useRef(null)
+
   return (
+
+
     <div className="App ">
-      <Header/>
-      <Contact/>
-      <Home />
-      <Products/>
+      <Header  homeRef= {homeRef} productRef= {productRef} aboutRef ={aboutRef } projectRef= {projectRef}/>
+      <Contact />
+      <Home homeRef= {homeRef} />
+      <Products productRef= {productRef} />
       
       <div data-aos="fade-up" className='z-0'>
-        <About/>
+        <About aboutRef ={aboutRef }/>
         </div>
-      <Projects/>
+      <Projects  projectRef= {projectRef}/>
       
     </div>
+
   );
 }
 

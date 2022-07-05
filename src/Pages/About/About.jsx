@@ -5,7 +5,7 @@ import Tech from "./Tech";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-export default function About() {
+export default function About({ aboutRef }) {
   const [comp, setComp] = useState("equipe");
 
   const componentsList = {
@@ -15,7 +15,7 @@ export default function About() {
   };
 
   return (
-    <div className=" ">
+    <div className=" " ref={aboutRef}>
       <h2 className="text-center font-mont font-bold  text-3xl sm:text-4xl ">
         Quem é a Pepper8?
       </h2>

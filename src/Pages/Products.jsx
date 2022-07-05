@@ -2,7 +2,7 @@ import React from "react";
 import mobile_icon from "../assets/mobile_icon.png";
 import desktop_icon from "../assets/desktop_icon.png";
 
-export default function Products() {
+export default function Products({ productRef }) {
   const products = {
     Mobile: [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit assumenda facilis repudiandae, accusantium cupiditate.",
@@ -28,8 +28,10 @@ export default function Products() {
 
   return (
     <>
-      <div className="text-center">
-        <h2 className="text-center font-mont font-bold text-4xl">PRODUTOS</h2>
+      <div ref={productRef} className="text-center">
+        <h2 className="text-center font-mont font-bold sm:text-6xl text-5xl">
+          PRODUTOS
+        </h2>
         <p className="text-center text-gray-500 mb-16 mt-2 text-lg">
           Confira abaixo os principais produtos que nós produzimos!
         </p>
@@ -37,7 +39,7 @@ export default function Products() {
           <>
             {Object.entries(products).map((product, i) => {
               return (
-                <div data-aos="fade-up" key={i} className="w-[60%]">
+                <div data-aos="fade-up" key={i} className="w-[60%] z-0">
                   <img
                     style={{
                       widht: product[1][2].w,

@@ -1,11 +1,17 @@
 import React from "react";
-import { WhatsappLogo } from "phosphor-react";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import { BsWhatsapp } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
-    <div className="z-20 fixed bottom-12 right-4  ">
-      <WhatsAppIcon large />
-    </div>
+    <motion.div
+      className=" z-20 fixed bottom-4 right-4 sm:right-32 "
+      animate={{ scale: 1.5 }}
+      transition={{ duration: 0.5 }}
+    >
+      <a href="https://wa.me/5521964811623" target="_blank">
+        <BsWhatsapp size={36} color="#25D366" />
+      </a>
+    </motion.div>
   );
 }
