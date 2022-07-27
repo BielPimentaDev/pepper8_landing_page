@@ -1,29 +1,32 @@
 import React from "react";
 import mobile_icon from "../assets/mobile_icon.png";
 import desktop_icon from "../assets/desktop_icon.png";
+import eterium from "../assets/eterium.png";
+import bot from "../assets/bot.png";
 
 export default function Products({ productRef }) {
   const products = {
+    Automation: [
+      "Services for automate repeated task and create bots for web scraping.",
+      bot,
+      { w: "176px", h: "140px" },
+    ],
+    Web: [
+      "The most common and efficient way to create or impulse your busines, using websites and software applications, you find here in Pepper 8.",
+      desktop_icon,
+      { w: "85px", h: "150px" },
+    ],
     Mobile: [
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit assumenda facilis repudiandae, accusantium cupiditate.",
+      "Using the newer technologies, we create mobile apps, hybrids or native, for your ideas can be accessed by anywhere and anytime",
       mobile_icon,
       { w: "85px", h: "150px" },
     ],
-    Mobiles: [
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit assumenda facilis repudiandae, accusantium cupiditate.",
-      mobile_icon,
-      { w: "85px", h: "150px" },
-    ],
-    Desktop: [
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. .",
-      desktop_icon,
+    Blockchain: [
+      "We make the process of registry transactions and tracking assets in an enterprise network.",
+      eterium,
       { w: "176px", h: "140px" },
     ],
-    Desktops: [
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit assumenda facilis repudiandae, dignissimos illum iste harum desktop",
-      desktop_icon,
-      { w: "176px", h: "140px" },
-    ],
+   
   };
 
   return (
@@ -33,10 +36,10 @@ export default function Products({ productRef }) {
           ref={productRef}
           className="text-center font-mont font-bold sm:text-6xl text-5xl"
         >
-          PRODUTOS
+          PRODUCTS
         </h2>
         <p className="text-center text-gray-500 mb-16 mt-2 text-lg">
-          Confira abaixo os principais produtos que nós produzimos!
+        Check here our main products that we make!
         </p>
         <div className="flex items-start content-center text-center flex-wrap justify-center gap-16 sm:flex-nowrap px-8">
           <>
@@ -63,7 +66,7 @@ export default function Products({ productRef }) {
         </div>
 
         <button className="my-32 block border-[0.5px] text-purple border-purple w-[350px] m-auto  p-2 text-xl">
-          Conheça nossos produtos
+          Meet our products
         </button>
       </div>
     </>

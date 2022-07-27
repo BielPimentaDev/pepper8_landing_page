@@ -12,38 +12,43 @@ const skills = [
 
 export default function Home({ homeRef }) {
   return (
-    <div className="flex flex-col gap-32 mb-16">
+    <div className="flex flex-col gap-32 mb-16 p-4">
       <div
         ref={homeRef}
-        className="flex flex-col justify-between h-[75vh]  sm:pt-24 mt-16 sm:mt-0 "
+        className="flex flex-col justify-between h-[60vh]  sm:pt-24 mt-32 sm:mt-8 "
       >
-        <section className="flex mt-[30px] flex-col-reverse sm:flex-row sm:items-center">
+        <section className="flex mt-[30px] flex-col-reverse lg:flex-row sm:items-center">
           <div className="text-center sm:p-8  ">
-            <h2 className="font-bold text-3xl font-mont  sm:text-5xl">
-              ESSE É O TÍTULO DA LANDING PAGE
+            <h2 className="font-bold text-3xl font-mont uppercase  sm:text-5xl">
+            The best tech solutions are here.
             </h2>
             <p className="text-graylight mt-4 font-light text-xl">
-              Lorem ipsum dolor sit{" "}
-              <b className="font-extrabold">amet consectetur adipisicing</b>{" "}
-              elit. Tempora neque rerum quae perspiciatis velit.
+            Developing software to<b className="font-extrabold"> professionalize</b>, <b className="font-extrabold">
+            manage  </b>and  <b className="font-extrabold">
+            simplify 
+                </b>{" "}
+                your business
             </p>
-            <button className="bg-purple p-4 rounded-lg mt-16 font-mont ">
-              Entrar em contato
+            <button className="bg-purple p-4 rounded-lg mt-16 font-mont font-semibold  ">
+              GET IN TOUTCH
             </button>
           </div>
           <img
             src={banner}
-            className=" lg:block lg:w-[60%] h-[90%] sm:h-[100%]  w-[80%]"
+            alt="banner"
+            className=" lg:block lg:w-[40%] h-[90%] sm:h-[100%] sm:w-[40%]  w-[90%] "
           />
         </section>
       </div>
 
       <div className="sm:my-0 my-16">
-        <h2 className="text-center font-mont font-bold sm:text-5xl s:w-[700px] text-xl  mx-auto ">
-          CRIAMOS COM O QUE HÁ DE{" "}
-          <b className="text-purple font-bold">MELHOR</b> NO MERCADO
+        <h2 className="text-center font-mont font-bold sm:text-4xl s:w-[700px] text-2xl uppercase  mx-auto ">
+        we create it with the  {" "}
+          <b className="text-purple font-bold">best</b> in the market
         </h2>
-        <p className="text-center text-gray-500 mb-16 mt-2 text-lg"></p>
+        <p className="text-center text-gray-500 mb-16 mt-2 text-lg w-[80%] mx-auto">
+       
+        </p>
         <ul className="flex justify-around sm:w-[40%] sm:mx-auto ">
           {skills.map((skill) => {
             return (
