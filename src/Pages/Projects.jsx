@@ -55,7 +55,7 @@ export default function Projects({ projectRef }) {
         <p className="text-center text-gray-500 mb-16 mt-2 text-lg">
         Check out below the main projects we produce!
         </p>
-        <div className="flex flex-wrap gap-12 ">
+        <div className="flex flex-wrap gap-12 justify-center">
           {projects.map((project, i) => {
             return <CardProject data={project} key={i} />;
           })}
