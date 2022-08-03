@@ -55,7 +55,7 @@ export default function Projects({ projectRef }) {
         
 Confira abaixo os principais projetos que produzimos!
         </p>
-        <div className="flex flex-wrap gap-12 ">
+        <div className="flex flex-wrap gap-12 justify-center">
           {projects.map((project, i) => {
             return <CardProject data={project} key={i} />;
           })}

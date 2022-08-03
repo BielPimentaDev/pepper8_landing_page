@@ -9,7 +9,7 @@ export default function Contact() {
       animate={{ scale: 2.5 }}
       transition={{ duration: 0.5 }}
     >
-      <a href="https://wa.me/5521964811623" target="_blank">
+      <a href="https://wa.me/2196493-8805" target="_blank">
         <BsWhatsapp size={16} color="#25D366" />
       </a>
     </motion.div>
