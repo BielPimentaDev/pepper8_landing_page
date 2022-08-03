@@ -18,19 +18,19 @@ export default function Header({ aboutRef, projectRef, homeRef, productRef }) {
               onClick={() => handleClick(productRef)}
               className="text-graylight hover:text-white border-b-2 hover:border-purple border-black cursor-pointer"
             >
-              Products
+              Produtos
             </li>
             <li
               onClick={() => handleClick(aboutRef)}
               className="text-graylight hover:text-white border-b-2 hover:border-purple border-black cursor-pointer"
             >
-              About
+              Sobre
             </li>
             <li
               onClick={() => handleClick(projectRef)}
               className="text-graylight hover:text-white border-b-2 hover:border-purple border-black cursor-pointer"
             >
-              Projects
+              Projetos
             </li>
           </ul>
         </nav>
@@ -64,7 +64,7 @@ export default function Header({ aboutRef, projectRef, homeRef, productRef }) {
               handleClick(productRef);
             }}
           >
-            Products
+            Produtos
           </li>
           <li
             onClick={() => {
@@ -72,7 +72,7 @@ export default function Header({ aboutRef, projectRef, homeRef, productRef }) {
               handleClick(aboutRef);
             }}
           >
-            About
+            Sobre
           </li>
           <li
             onClick={() => {
@@ -80,7 +80,7 @@ export default function Header({ aboutRef, projectRef, homeRef, productRef }) {
               handleClick(projectRef);
             }}
           >
-            Projects
+            Projetos
           </li>
         </ul>
       </nav>
