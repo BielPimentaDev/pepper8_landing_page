@@ -1,6 +1,7 @@
 import { List, X } from "phosphor-react";
 import React, { useState } from "react";
 import banner from "../assets/banner_img.png";
+import {Link} from 'react-router-dom'
 
 export default function Header({ aboutRef, projectRef, homeRef, productRef }) {
   const handleClick = (ref) => {
@@ -13,24 +14,30 @@ export default function Header({ aboutRef, projectRef, homeRef, productRef }) {
       <header className="z-10 flex justify-between items-center p-4 sm:px-16 sm:py-8 fixed top-0 w-full max-w-[1400px] bg-black">
         <h1 className="font-mont text-2xl font-extrabold">PEPPER 8</h1>
         <nav>
-          <ul className="hidden sm:flex justify-around w-[300px] text-xl ">
+          <ul className="hidden sm:flex justify-around w-[400px] text-xl gap-4 ">
+            <li
+              
+              className="text-graylight hover:text-white border-b-2 hover:border-purple border-black cursor-pointer"
+            >
+              <Link to="/">ENG</Link>
+            </li>
             <li
               onClick={() => handleClick(productRef)}
               className="text-graylight hover:text-white border-b-2 hover:border-purple border-black cursor-pointer"
             >
-              Produtos
+              Products
             </li>
             <li
               onClick={() => handleClick(aboutRef)}
               className="text-graylight hover:text-white border-b-2 hover:border-purple border-black cursor-pointer"
             >
-              Sobre
+              About
             </li>
             <li
               onClick={() => handleClick(projectRef)}
               className="text-graylight hover:text-white border-b-2 hover:border-purple border-black cursor-pointer"
             >
-              Projetos
+              Projects
             </li>
           </ul>
         </nav>
@@ -64,7 +71,7 @@ export default function Header({ aboutRef, projectRef, homeRef, productRef }) {
               handleClick(productRef);
             }}
           >
-            Produtos
+            Products
           </li>
           <li
             onClick={() => {
@@ -72,7 +79,7 @@ export default function Header({ aboutRef, projectRef, homeRef, productRef }) {
               handleClick(aboutRef);
             }}
           >
-            Sobre
+            About
           </li>
           <li
             onClick={() => {
@@ -80,7 +87,7 @@ export default function Header({ aboutRef, projectRef, homeRef, productRef }) {
               handleClick(projectRef);
             }}
           >
-            Projetos
+            Projects
           </li>
         </ul>
       </nav>
