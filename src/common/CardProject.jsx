@@ -15,7 +15,7 @@ export default function CardProject({ data }) {
         <h4 className="p-2 text-center text-xl">{data.title}</h4>
         <p className="text-graylight text-sm font-light">{data.description}</p>
         <a href={data.link} target="_blank" className="text-purple font-mont font-bold text-end block cursor-pointer">
-          Ver mais
+          See more
         </a>
       </div>
     </div>
